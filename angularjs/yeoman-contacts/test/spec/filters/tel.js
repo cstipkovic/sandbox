@@ -1,0 +1,18 @@
+'use strict';
+
+describe('Filter: tel', function () {
+
+  // load the filter's module
+  beforeEach(module('yeomanContactsAppApp'));
+
+  // initialize a new instance of the filter before each test
+  var tel;
+  beforeEach(inject(function ($filter) {
+    tel = $filter('tel');
+  }));
+
+  it('should return the input prefixed with "tel filter:"', function () {
+    var text = 'angularjs';
+    expect(tel(text)).toBe('(555)555-5555');
+  });
+});
