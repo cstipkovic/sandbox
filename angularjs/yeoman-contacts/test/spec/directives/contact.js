@@ -12,9 +12,9 @@ describe('Directive: contact', function () {
     scope = $rootScope.$new();
   }));
 
-  it('should make hidden element visible', inject(function ($compile) {
-    element = angular.element('<contact></contact>');
-    element = $compile(element)(scope);
+  it('should make hidden element visible', inject(function ($rootScope, $compile) {
+    element = angular.element('');
+    element = $compile(element)($rootScope);
     expect(element.text()).toBe('this is the contact directive');
   }));
 });
