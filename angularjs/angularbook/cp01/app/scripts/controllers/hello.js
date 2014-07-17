@@ -9,9 +9,7 @@
  */
 angular.module('cp01App')
   .controller('HelloCtrl', function ($scope) {
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
+    $scope.greeting = {
+      text: 'Hello'
+    };
   });
