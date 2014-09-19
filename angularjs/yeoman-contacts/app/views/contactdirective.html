@@ -1,0 +1,22 @@
+&lt;div id="contact-{{$index}}" class="well well-small clearfix"&gt;
+        &lt;a class="pull-left thumb" ng-href="/details/{{$index}}"&gt;
+            &lt;img class="media-object" ng-src="{{item.avatar}}"
+                          src="http://placehold.it/100x100&amp;text=Image"
+                          alt="Contact {{item.name}} Image"/&gt;
+        &lt;/a&gt;
+        &lt;div class="media-body"&gt;
+            &lt;h4 class="media-heading"&gt;
+                {{item.name}}
+            &lt;/h4&gt;
+            &lt;p class="meta"&gt;
+                &lt;ul class="unstyled"&gt;
+                  &lt;li class="phone"&gt;&lt;a ng-href="tel:{{item.phone}}"&gt;
+                                     &lt;i class="icon-phone"&gt;&lt;/i&gt; {{item.
+                                        phone | tel}} &lt;/a&gt;&lt;/li&gt;
+                  &lt;li class="email"&gt;&lt;a ng-href="mailto:{{item.email}}"&gt;
+                                      &lt;i class="icon-envelope"&gt;&lt;/i&gt; {{item.email}}
+                                           &lt;/a&gt;&lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;

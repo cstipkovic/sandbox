@@ -15,13 +15,15 @@ angular.module('yeomanContactsAppApp')
       ],
       contact: null,
       filter: {
-        limit 10,
+        limit: 10,
         order: 'name',
         reverse: false,
         query: null
       },
       init: function () {
-        new ContactsService(function () {
+      },
+      getContacts: function () {
+        new ContactsService(function (data) {
           $scope.$apply(function () {
             $scope.App.loading = false;
             $scope.App.model = data;
@@ -32,10 +34,10 @@ angular.module('yeomanContactsAppApp')
         $rootScope.App.contact = obj;
         $rootScope.selectContact = obj;
       },
-      saveContact: function (obj) {
+      saveContact: function () {
 
       },
-      removeContact: function (obj) {
+      removeContact: function () {
 
       }
     };

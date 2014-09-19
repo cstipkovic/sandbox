@@ -5,7 +5,7 @@ angular.module('yeomanContactsAppApp')
     return {
       templateUrl: 'views/contactDirective.html',
       restrict: 'E',
-      link: function postLink(scope, element, attrs) {
+      link: function postLink(element) {
         element.addClass('contact');
       }
     };
