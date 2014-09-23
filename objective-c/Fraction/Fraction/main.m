@@ -7,7 +7,11 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "Fraction.h"
 
 int main(int argc, const char * argv[]) {
+    
+    Fraction *f1 = [[Fraction alloc] init];
+    
     return NSApplicationMain(argc, argv);
 }
