@@ -12,4 +12,4 @@ This is the repo where I white some codes when I'm studing from some books or te
   - Some tests
 
 - Objective-C
-  - Video Clas about Objective-C development
+  - Video Class about Objective-C development
