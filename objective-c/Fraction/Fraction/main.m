@@ -26,7 +26,7 @@ int main(int argc, const char * argv[]) {
     
     [f1 print];
     
-    NSLog(@"F1 * F2 = %.lf", [f1 toDouble]);
+    NSLog(@"F1 * F2 = %.2lf", [f1 toDouble]);
     
     return NSApplicationMain(argc, argv);
 }
