@@ -1,0 +1,29 @@
+# Version: 8.8.0.2 (ccfcd59)
+# [first argument, ignore] # /Users/cstipkovic/Documents/Projects/github/cstipkovic/sandbox/ios/XamarinFA/XamarinFApp/bin/iPhoneSimulator/Debug/mtouch.exe
+/Library/Frameworks/Xamarin.iOS.framework/Versions/8.8.0.2/bin/mtouch-64 \
+	-sdkroot \
+	/Applications/Xcode.app/Contents/Developer \
+	--cache \
+	/Users/cstipkovic/Documents/Projects/github/cstipkovic/sandbox/ios/XamarinFA/XamarinFApp/obj/iPhoneSimulator/Debug/mtouch-cache \
+	--executable \
+	XamarinFApp \
+	--nomanifest \
+	--nosign \
+	-sim \
+	/Users/cstipkovic/Documents/Projects/github/cstipkovic/sandbox/ios/XamarinFA/XamarinFApp/bin/iPhoneSimulator/Debug/XamarinFApp.app \
+	-r \
+	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/2.1/System.dll \
+	-r \
+	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/2.1/System.Xml.dll \
+	-r \
+	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/2.1/System.Core.dll \
+	-r \
+	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/2.1/monotouch.dll \
+	-debug \
+	-nolink \
+	-sdk \
+	8.2 \
+	-targetver \
+	7.0 \
+	--abi=i386 \
+	/Users/cstipkovic/Documents/Projects/github/cstipkovic/sandbox/ios/XamarinFA/XamarinFApp/bin/iPhoneSimulator/Debug/XamarinFApp.exe \
