@@ -1,3 +1,5 @@
 .idea
 *.class
 .DS_Store
+/java/revisao-lp2/aula3/InputOutput/nbproject/private/
+/java/revisao-lp2/aula3/InputOutput/build/
