@@ -17,12 +17,32 @@
         };
     });
 
+    app.controller('ReviewController', function () {
+        this.review = {};
+
+        this.addReview = function (product) {
+            product.review.push(this.review);
+        }
+    });
+
     var gems = [
         {
             name: 'Dodecahedron',
             price: 2,
             description: 'lorem ipsum',
-            images: []
+            images: [],
+            reviews: [
+                {
+                    stars: 5,
+                    body: 'I love this product',
+                    author: 'aa@bb.com'
+                },
+                {
+                    stars: 3,
+                    body: 'Good product',
+                    author: 'bla@cc.com'
+                }
+            ]
         },
         {
             name: 'Dodecahedron',
@@ -31,6 +51,18 @@
             images: [
                 'Dodecahedron.jpg',
                 'Dodecahedron-thumb.jpg'
+            ],
+            reviews: [
+                {
+                    stars: 5,
+                    body: 'I love this product',
+                    author: 'aa@bb.com'
+                },
+                {
+                    stars: 3,
+                    body: 'Good product',
+                    author: 'bla@cc.com'
+                }
             ]
         },
         {
@@ -40,6 +72,18 @@
             images: [
                 'Dodecahedron.jpg',
                 'Dodecahedron-thumb.jpg'
+            ],
+            reviews: [
+                {
+                    stars: 5,
+                    body: 'I love this product',
+                    author: 'aa@bb.com'
+                },
+                {
+                    stars: 3,
+                    body: 'Good product',
+                    author: 'bla@cc.com'
+                }
             ]
         },
         {
@@ -49,6 +93,18 @@
             images: [
                 'Dodecahedron.jpg',
                 'Dodecahedron-thumb.jpg'
+            ],
+            reviews: [
+                {
+                    stars: 5,
+                    body: 'I love this product',
+                    author: 'aa@bb.com'
+                },
+                {
+                    stars: 3,
+                    body: 'Good product',
+                    author: 'bla@cc.com'
+                }
             ]
         }
     ];
