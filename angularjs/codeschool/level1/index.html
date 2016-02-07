@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html ng-app="store">
+<head>
+    <meta charset="UTF-8">
+    <title>Level 1 - AngularJS - Code School</title>
+    <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+</head>
+<body ng-controller="StoreController as store">
+    <ul class="list-group">
+        <li class="list-group-item" ng-repeat="product in store.products">
+            <h3 ng-show="product.images.length > 0">
+                {{product.name}}
+                <em class="pull-right">{{product.price | currency}}</em>
+                <img ng-src="{{product.images[0]}}">
+            </h3>
+
+            <blockquote class="blockquote-reverse" ng-repeat="review in product.reviews">
+                <b>Stars: {{reviews.stars}}</b>
+                {{review.body}}
+                <cite>by: {{review.author}}</cite>
+            </blockquote>
+
+            <form name="reviewForm">
+                <blockquote class="blockquote-reverse">
+                    <b>Stars: {{reviews.stars}}</b>
+                    {{review.body}}
+                    <cite>by: {{review.author}}</cite>
+                </blockquote>
+                <select ng-model="review.stars">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+                <textarea name="name" rows="8" cols="40" ng-model="review.body"></textarea>
+                <label for="">By:</label>
+                <input type="email" ng-model="review.author">
+                <input type="submit" value="Submit">
+            </form>
+        </li>
+    </ul>
+
+    <section ng-controller="PanelController as panel">
+        <ul class="nav nav-pills">
+            <li ng-class="{active: panel.isSelected(1)}"><a href="" ng-click="panel.selectTab(1)">Desc</a></li>
+            <li ng-class="{active: panel.isSelected(2)}"><a href="" ng-click="panel.selectTab(2)">Spec</a></li>
+            <li ng-class="{active: panel.isSelected(3)}"><a href="" ng-click="panel.selectTab(3)">Rev</a></li>
+        </ul>
+
+        <div class="panel" ng-show="panel.isSelected(1)">
+            <h4>Des</h4>
+            <p></p>
+        </div>
+        <div class="panel" ng-show="panel.isSelected(2)">
+            <h4>spec</h4>
+            <p></p>
+        </div>
+        <div class="panel" ng-show="panel.isSelected(3)">
+            <h4>Reviews</h4>
+            <blockquote class="blockquote-reverse" ng-repeat="review in products.reviews">
+                <b>Stars: {{reviews.stars}}</b>
+                {{review.body}}
+                <cite>by: {{review.author}}</cite>
+            </blockquote>
+        </div>
+    </section>
+
+    <script type="text/javascript" src="angular.min.js" charset="utf-8"></script>
+    <script type="text/javascript" src="app.js" charset="utf-8"></script>
+</body>
+</html>
