@@ -8,8 +8,8 @@
 # NODEW_INSTALL_VERSION - an env variable to specify the version of node to install - Defaults to 4.4.7
 # NODEW_DIST_BASE_URL - an env variable to specify the binary download location - Defaults to NodeJS website
 #
-# Sample usage: ./npmw install express --save
-#
+# Sample usage: ./nodew script.js
+
 INSTALL_PATH="./bin"
 INSTALL_VERSION=$NODEW_INSTALL_VERSION
 DIST_BASE_URL=$NODEW_DIST_BASE_URL
@@ -58,5 +58,5 @@ if [ ! -d "$FULL_PATH"  ]; then
   rm $INSTALL_PATH/node.tar.gz
 fi
 
-# start the npm executable
-"$FULL_PATH"/bin/node "$FULL_PATH"/bin/npm "$@"
+# start the node executable
+"$FULL_PATH"/bin/node "$@"
