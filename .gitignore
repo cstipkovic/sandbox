@@ -2,5 +2,6 @@
 *.class
 .DS_Store
 .*.swp
+node_modules/
 /java/revisao-lp2/aula3/InputOutput/nbproject/private/
 /java/revisao-lp2/aula3/InputOutput/build/
