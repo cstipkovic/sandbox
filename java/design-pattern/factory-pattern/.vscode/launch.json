@@ -1,0 +1,11 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - FactoryPatternDemo",
+            "request": "launch",
+            "mainClass": "FactoryPatternDemo",
+            "projectName": "factory-pattern_cd68727d"
+        }
+    ]
+}
