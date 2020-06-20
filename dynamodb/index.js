@@ -14,6 +14,10 @@ var params = {
             AttributeName: 'partner_id', KeyType: 'HASH'
         }
     ],
+    ProvisionedThroughput: {
+        ReadCapacityUnits: 5,
+        WriteCapacityUnits: 5
+    },
     AttributeDefinitions: [
         {
             AttributeName: 'partner_id', AttributeType: 'N'
