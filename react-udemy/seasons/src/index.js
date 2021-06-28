@@ -1,6 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
+import "semantic-ui-css/semantic.min.css";
+
 import SesasonDisplay from "./SeasonDisplay";
 
 class App extends React.Component {
