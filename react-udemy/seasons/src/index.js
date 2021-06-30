@@ -4,6 +4,7 @@ import ReactDOM from "react-dom";
 import "semantic-ui-css/semantic.min.css";
 
 import SesasonDisplay from "./SeasonDisplay";
+import Spinner from "./Spinner"
 
 class App extends React.Component {
   state = { lat: null, errorMessage: "" };
@@ -15,7 +16,7 @@ class App extends React.Component {
     );
   }
 
-  render() {
+  renderContent() {
     if (this.state.errorMessage && !this.state.lat) {
       return <>Error: {this.state.errorMessage}</>;
     }
@@ -24,7 +25,15 @@ class App extends React.Component {
       return <SesasonDisplay lat={this.state.lat} />;
     }
 
-    return <>Loading...</>;
+    return <Spinner message="Please accept location request"/>;
+  }
+
+  render() {
+    return (
+      <div className="border red">
+        {this.renderContent()}
+      </div>
+    )
   }
 }
 
