@@ -1,0 +1,20 @@
+.stars-container {
+    display: flex;
+}
+
+.stars-container span {
+    margin: 5px;
+    background-color: #333;
+    display: block;
+    width: 30px;
+    height: 30px;
+    box-sizing: border-box;
+}
+
+.stars-container span.selected-star {
+    background-color: green;
+}
+
+.stars-container span.star-hover {
+    border: 3px solid yellow;
+}
