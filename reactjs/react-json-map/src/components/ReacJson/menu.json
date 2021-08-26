@@ -1,0 +1,39 @@
+{
+  "menu": [
+    {
+      "name": "Operacional",
+      "sub": [
+        { "name": "Criar Apólice", "url": "" },
+        { "name": "Buscar Apólice", "url": "" },
+        { "name": "Dashboard", "url": "" },
+        { "name": "Importação em Lote", "url": "" },
+        { "name": "Operações Manuais", "url": "" },
+        { "name": "Acompanhamento Processual", "url": "" }
+      ]
+    },
+    {
+      "name": "Cadastros",
+      "sub": [
+        { "name": "Clientes", "url": "" },
+        { "name": "Subsidiárias", "url": "" },
+        { "name": "Escritórios", "url": "" },
+        { "name": "Grupos", "url": "" },
+        { "name": "Seguradoras", "url": "" },
+        { "name": "Enumeradas", "url": "" },
+        { "name": "Valores de Recursos", "url": "" },
+        { "name": "Segurados", "url": "" },
+        { "name": "Varas", "url": "" },
+        { "name": "Comarcas", "url": "" },
+        { "name": "Instâncias", "url": "" },
+        { "name": "Regras de Emissão", "url": "" }
+      ]
+    },
+    {
+      "name": "Administrativo",
+      "sub": [
+        { "name": "Gerenciamento de Usuários", "url": "" },
+        { "name": "Grupos de Permissão", "url": "" }
+      ]
+    }
+  ]
+}
