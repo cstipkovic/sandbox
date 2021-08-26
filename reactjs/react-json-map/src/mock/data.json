@@ -1,0 +1,8 @@
+{
+  "menu": [
+    {
+      "name": "Principal",
+      "sub": [{ "name": "Sub menu", "url": "" }]
+    }
+  ]
+}
