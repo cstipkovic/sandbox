@@ -1,6 +1,7 @@
 {
   "name": "myNodeApp",
   "author": "Developer",
+  "type": "module",
   "description": "my test node.js app",
   "version": "0.0.1",
   "dependencies": {
