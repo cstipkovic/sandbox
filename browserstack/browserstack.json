@@ -1,0 +1,6 @@
+{
+  "connection_settings": {
+    "local": true,
+    "local_mode": "always-on"
+  }
+}
