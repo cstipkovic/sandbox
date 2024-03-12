@@ -1,5 +1,3 @@
-(function() {
-  const test = '${textReplace}',
+const test = "replace text";
 
-    console.log(test);
-});
+console.log(test, "http://cstipkovic.github.com");

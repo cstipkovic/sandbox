@@ -1,5 +1,3 @@
-(function() {
-  const test = '{{textReplace}}',
+const test = "{{{textReplace}}}";
 
-    console.log(test);
-});
+console.log(test, "{{{url}}}");
